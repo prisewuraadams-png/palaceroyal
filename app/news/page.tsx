@@ -37,7 +37,7 @@ export default function NewsPage() {
       {/* Right Image */}
       <div className="relative h-[420px] overflow-hidden rounded-[36px] shadow-2xl">
         <Image
-          src="/images/news/lib.jpg"
+          src="/images/news/IMG_3185.jpg"
           alt="Palace Royal students"
           fill
           priority
@@ -72,10 +72,18 @@ export default function NewsPage() {
               </h2>
 
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Every day at Palace Royal is an opportunity for learners to
-                grow academically, socially and spiritually. Our classrooms are
-                designed to inspire curiosity while nurturing confidence,
-                creativity and leadership.
+                Learning at Palace Royal International School goes beyond textbooks and classrooms. 
+                Our students recently had the opportunity to visit Kotoka International Airport, 
+                where they experienced the world of aviation firsthand.
+
+The educational visit gave learners an exciting glimpse into airport operations, travel, customer service 
+and the many career opportunities within the aviation industry. More importantly, it allowed them to connect 
+what they learn in the classroom with the real world.
+
+At Palace Royal, we believe that every experience is an opportunity to learn, discover and dream bigger.
+ Through meaningful educational experiences like this, we nurture confident, curious and globally minded learners
+  who are prepared to explore the world and take their place in it.
+   
               </p>
 
               <button className="mt-8 inline-flex items-center gap-2 font-semibold text-[#6D0F2C] cursor-default">
@@ -112,33 +120,33 @@ export default function NewsPage() {
           title: "Admissions Now Open",
           date: "20 Aug 2026",
           image: "/images/news/admissions.jpg",
-          text: "Applications are now open for Creche, Nursery, Primary and JHS."
+          text: "Give your child a strong foundation through quality education, character development, creativity, and confidence in a safe and inspiring learning environment.."
         },
         {
-          title: "Classroom Excellence",
-          date: "12 Aug 2026",
-          image: "/images/news/classroom.jpg",
-          text: "Our learners continue to thrive through engaging and inspiring lessons."
+          title: "Mezzo Maths Competition",
+          date: "21st Mar 2026",
+          image: "/images/news/mezzo3.jpg",
+          text: "Our brilliant learners from Palace Royal International School (PRIS) have emerged winners in the Mezzopedia National Mathematics Contest, triumphing over Pethel School!. This victory is a reflection of our commitment to developing confident, curious and academically excellent learners who are prepared to think critically, solve problems and excel beyond the classroom.From the classroom to the competition stage, our learners continue to prove that excellence is a journey and at PRIS, we are committed to the journey.Congratulations to our amazing learners and dedicated teachers!"
         },
         {
-          title: "Cultural Day Ahead",
-          date: "5 Aug 2026",
-          image: "/images/news/cultural-day.jpg",
-          text: "Students are preparing exciting performances and cultural exhibitions."
+          title: "Graduation & Awards Day",
+          date: "12 April 2026",
+          image: "/images/news/graduads.jpg",
+          text: "Graduation & Awards Day is more than a celebration. It is to recognise hard work, nurture confidence, and inspire every student to pursue excellence. We celebrate academic achievement, creativity, character, leadership, and the unique talents that make every child exceptional. We don’t just celebrate how far our learners have come; we inspire them for where they are going."
         }
       ].map((item) => (
         <article
           key={item.title}
           className="group overflow-hidden rounded-[30px] bg-[#FAF8F6] shadow-lg transition hover:-translate-y-2 hover:shadow-xl"
         >
-          <div className="relative h-56 overflow-hidden">
-            <Image
-              src={item.image}
-              alt={item.title}
-              fill
-              className="object-cover transition duration-500 group-hover:scale-105"
-            />
-          </div>
+          <div className="relative aspect-[4/3] overflow-hidden rounded-t-[30px] bg-white">
+  <Image
+    src={item.image}
+    alt={item.title}
+    fill
+    className="object-contain object-center transition duration-500 group-hover:scale-[1.02]"
+  />
+</div>
 
           <div className="p-7">
             <div className="flex items-center gap-2 text-sm text-[#D4AF37]">
@@ -197,52 +205,8 @@ export default function NewsPage() {
         </div>
       </section>
 
-      {/* Announcements */}
-      <section className="bg-[#6D0F2C] py-24 text-white">
-        <div className="mx-auto max-w-4xl px-6 text-center">
-          <Bell className="mx-auto text-[#D4AF37]" size={42} />
-
-          <h2 className="mt-6 text-4xl font-black">
-            School Announcements
-          </h2>
-
-          <p className="mt-6 text-lg leading-8 text-white/85">
-            Important notices for parents, students and staff will be published
-            here throughout the school year.
-          </p>
-        </div>
-      </section>
-
-      {/* Photo Highlights */}
-      <section className="py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-12">
-          <div className="text-center">
-            <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#D4AF37]">
-              Memories
-            </p>
-
-            <h2 className="mt-4 text-4xl font-black text-[#3A0817]">
-              Photo Highlights
-            </h2>
-          </div>
-
-          <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-4">
-            {[1, 2, 3, 4].map((n) => (
-              <div
-                key={n}
-                className="relative aspect-square overflow-hidden rounded-3xl"
-              >
-                <Image
-                  src={`/images/news/gallery${n}.jpg`}
-                  alt={`Gallery ${n}`}
-                  fill
-                  className="object-cover transition duration-500 hover:scale-105"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+   
+      
 
       {/* CTA */}
       <section className="bg-[#3A0817] py-24 text-center text-white">
