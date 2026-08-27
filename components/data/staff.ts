@@ -261,12 +261,12 @@ Committed to creating meaningful and engaging classroom experiences, he strives 
 },
 
   {
-    id: "teacher-10",
-    slug: "teacher-10",
+    id: "teacher7",
+    slug: "teacher7",
     name: "Ms. Henrietta Animley",
     role: "Year2 Teacher",
     category: "teachers",
-    image: "/images/staff/teacher10.jpg",
+    image: "/images/staff/teacher7.jpg",
     quote: "Learning begins with curiosity.",
     bio: "Teacher biography.",
     qualifications: ["Qualification"],

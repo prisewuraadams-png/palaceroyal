@@ -70,59 +70,183 @@ export default function CurriculumStructure() {
   ];
 
   return (
-    <section className="bg-[#F8F7F5] py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="bg-[#F8F7F5] py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto w-full max-w-6xl px-5 sm:px-8">
 
-        <div className="mb-16 text-center">
-          <p className="text-xs font-bold uppercase tracking-[0.35em] text-[#D4AF37]">
+        {/* =====================================================
+            SECTION HEADER
+        ====================================================== */}
+        <div className="mb-10 text-center sm:mb-14 lg:mb-16">
+
+          <p
+            className="
+              text-[10px]
+              font-bold
+              uppercase
+              tracking-[0.3em]
+              text-[#D4AF37]
+
+              sm:text-xs
+              sm:tracking-[0.35em]
+            "
+          >
             Curriculum Structure
           </p>
 
-          <h2 className="mt-4 text-4xl font-black text-[#6D0F2C] md:text-5xl">
+          <h2
+            className="
+              mt-4
+              text-3xl
+              font-black
+              leading-tight
+              text-[#6D0F2C]
+
+              sm:text-4xl
+              md:text-5xl
+            "
+          >
             Learning Pathways by Stage
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl text-gray-600">
+          <p
+            className="
+              mx-auto
+              mt-5
+              max-w-2xl
+              text-sm
+              leading-6
+              text-gray-600
+
+              sm:text-base
+              sm:leading-7
+            "
+          >
             Our curriculum combines international exposure with strong
             Ghanaian academic foundations at every stage of learning.
           </p>
+
         </div>
 
-        <div className="space-y-8">
+        {/* =====================================================
+            STAGES
+        ====================================================== */}
+        <div className="space-y-6 sm:space-y-8">
 
           {stages.map((stage) => (
             <div
               key={stage.number}
-              className="rounded-[32px] border border-[#E9E3DB] bg-white p-6 shadow-sm md:p-8"
-            >
-              <div className="mb-8 flex items-center gap-4">
+              className="
+                rounded-[24px]
+                border
+                border-[#E9E3DB]
+                bg-white
+                p-5
+                shadow-sm
 
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#6D0F2C] text-sm font-bold text-[#D4AF37]">
+                sm:rounded-[28px]
+                sm:p-7
+
+                lg:rounded-[32px]
+                lg:p-8
+              "
+            >
+
+              {/* Stage Heading */}
+              <div className="mb-6 flex items-center gap-3 sm:mb-8 sm:gap-4">
+
+                <div
+                  className="
+                    flex
+                    h-10
+                    w-10
+                    shrink-0
+                    items-center
+                    justify-center
+                    rounded-xl
+                    bg-[#6D0F2C]
+                    text-xs
+                    font-bold
+                    text-[#D4AF37]
+
+                    sm:h-11
+                    sm:w-11
+                    sm:text-sm
+                  "
+                >
                   {stage.number}
                 </div>
 
-                <div>
-                  <h3 className="text-2xl font-bold text-[#6D0F2C]">
+                <div className="min-w-0">
+                  <h3
+                    className="
+                      text-xl
+                      font-bold
+                      leading-tight
+                      text-[#6D0F2C]
+
+                      sm:text-2xl
+                    "
+                  >
                     {stage.title}
                   </h3>
 
-                  <p className="text-sm text-gray-500">{stage.ages}</p>
+                  <p className="mt-1 text-xs text-gray-500 sm:text-sm">
+                    {stage.ages}
+                  </p>
                 </div>
+
               </div>
 
-              <div className="grid gap-5 md:grid-cols-2">
+              {/* =================================================
+                  CURRICULUM COLUMNS
+              ================================================== */}
+              <div className="grid grid-cols-1 gap-5 lg:grid-cols-2 lg:gap-6">
 
                 {/* Oxford */}
-                <div className="rounded-3xl border border-[#D4AF37]/40 bg-[#F8F1DD] p-5">
-                  <h4 className="mb-5 font-bold text-[#6D0F2C]">
+                <div
+                  className="
+                    rounded-[22px]
+                    border
+                    border-[#D4AF37]/40
+                    bg-[#F8F1DD]
+                    p-4
+
+                    sm:rounded-3xl
+                    sm:p-5
+                  "
+                >
+                  <h4
+                    className="
+                      mb-4
+                      text-sm
+                      font-bold
+                      leading-6
+                      text-[#6D0F2C]
+
+                      sm:mb-5
+                      sm:text-base
+                    "
+                  >
                     Oxford International Curriculum
                   </h4>
 
-                  <div className="flex flex-wrap gap-3">
+                  <div className="flex flex-wrap gap-2 sm:gap-3">
                     {stage.oxford.map((subject) => (
                       <span
                         key={subject}
-                        className="rounded-full border border-[#E4D8C5] bg-white px-3 py-2 text-xs text-[#6D0F2C]"
+                        className="
+                          rounded-full
+                          border
+                          border-[#E4D8C5]
+                          bg-white
+                          px-3
+                          py-2
+                          text-[11px]
+                          leading-4
+                          text-[#6D0F2C]
+
+                          sm:text-xs
+                        "
                       >
                         {subject}
                       </span>
@@ -131,16 +255,50 @@ export default function CurriculumStructure() {
                 </div>
 
                 {/* GES */}
-                <div className="rounded-3xl border border-[#E7D8DD] bg-[#FAF5F6] p-5">
-                  <h4 className="mb-5 font-bold text-[#6D0F2C]">
+                <div
+                  className="
+                    rounded-[22px]
+                    border
+                    border-[#E7D8DD]
+                    bg-[#FAF5F6]
+                    p-4
+
+                    sm:rounded-3xl
+                    sm:p-5
+                  "
+                >
+                  <h4
+                    className="
+                      mb-4
+                      text-sm
+                      font-bold
+                      leading-6
+                      text-[#6D0F2C]
+
+                      sm:mb-5
+                      sm:text-base
+                    "
+                  >
                     GES Curriculum
                   </h4>
 
-                  <div className="flex flex-wrap gap-3">
+                  <div className="flex flex-wrap gap-2 sm:gap-3">
                     {stage.ges.map((subject) => (
                       <span
                         key={subject}
-                        className="rounded-full border border-[#E4D8DD] bg-white px-3 py-2 text-xs text-[#6D0F2C]"
+                        className="
+                          rounded-full
+                          border
+                          border-[#E4D8DD]
+                          bg-white
+                          px-3
+                          py-2
+                          text-[11px]
+                          leading-4
+                          text-[#6D0F2C]
+
+                          sm:text-xs
+                        "
                       >
                         {subject}
                       </span>

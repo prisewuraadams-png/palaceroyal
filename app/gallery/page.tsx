@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import Image from "next/image";
 import { useState } from "react";
@@ -25,74 +25,536 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: 3,
-    src: "/images/gallery/graduation3.jpg",
-    title: "Celebrating Achievement",
+    src: "/images/gallery/graduation16.jpg",
+    title: "Graduation & Awards Day",
     category: "Graduation",
   },
-  {
+
+    {
     id: 4,
-    src: "/images/gallery/school1.jpg",
-    title: "Life at Palace Royal",
-    category: "School Life",
+    src: "/images/gallery/graduation4.jpg",
+    title: "Graduation & Awards Day",
+    category: "Graduation",
   },
-  {
+
+    {
     id: 5,
-    src: "/images/gallery/school2.jpg",
-    title: "Learning Together",
-    category: "Academics",
+    src: "/images/gallery/graduation5.jpg",
+    title: "Graduation & Awards Day",
+    category: "Graduation",
   },
+
+
+
   {
     id: 6,
-    src: "/images/gallery/event1.jpg",
-    title: "School Events",
-    category: "Events",
+    src: "/images/gallery/class1.jpg",
+    title: "Life at Palace Royal",
+    category: "Classrooms",
   },
-  {
+
+
+{
     id: 7,
-    src: "/images/gallery/event2.jpg",
-    title: "Celebrating Together",
-    category: "Events",
+    src: "/images/gallery/class2.jpg",
+    title: "Life at Palace Royal",
+    category: "Classrooms",
   },
+
   {
     id: 8,
-    src: "/images/gallery/sports1.jpg",
-    title: "Sports & Activities",
-    category: "Sports",
+    src: "/images/gallery/class3.jpg",
+    title: "Life at Palace Royal",
+    category: "Classrooms",
   },
+
   {
     id: 9,
-    src: "/images/gallery/sports2.jpg",
-    title: "Developing Young Talent",
-    category: "Sports",
+    src: "/images/gallery/class4.jpg",
+    title: "Life at Palace Royal",
+    category: "Classrooms",
+  },
+
+{
+    id: 10,
+    src: "/images/gallery/class5.jpg",
+    title: "Life at Palace Royal",
+    category: "Classrooms",
+  },
+
+  {
+    id: 11,
+    src: "/images/gallery/class8.jpg",
+    title: "Life at Palace Royal",
+    category: "Classrooms",
+  },
+
+{
+    id: 12,
+    src: "/images/gallery/class7.jpg",
+    title: "Life at Palace Royal",
+    category: "Classrooms",
+  },
+
+  {
+    id: 13,
+    src: "/images/gallery/class9.jpg",
+    title: "Learning Together",
+    category: "Classrooms",
+  },
+
+
+  {
+    id: 14,
+    src: "/images/gallery/event1.jpg",
+    title: "Back To the 90s",
+    category: "Events",
   },
   {
-    id: 10,
+    id: 15,
+    src: "/images/gallery/event2.jpg",
+    title: "Back To the 90s",
+    category: "Events",
+  },
+
+
+  {
+    id: 16,
+    src: "/images/gallery/event3.jpg",
+    title: "Back To the 90s",
+    category: "Events",
+  },
+
+  {
+    id: 17,
+    src: "/images/gallery/event4.jpg",
+    title:"Back To the 90s",
+    category: "Events",
+  },
+
+
+  {
+    id: 18,
     src: "/images/gallery/visit1.jpg",
     title: "Educational Visit",
     category: "Educational Visits",
   },
+
   {
-    id: 11,
+    id: 19,
     src: "/images/gallery/visit2.jpg",
     title: "Learning Beyond the Classroom",
     category: "Educational Visits",
   },
+
+
   {
-    id: 12,
+    id: 20,
     src: "/images/gallery/school3.jpg",
     title: "Our School Community",
     category: "School Life",
   },
+
+
+  {
+    id: 21,
+    src: "/images/gallery/school3.jpg",
+    title: "Our School Community",
+    category: "School Life",
+  },
+
+   {
+    id: 22,
+    src: "/images/gallery/event5.jpg",
+    title: "Back To the 90s",
+    category: "Events",
+  },
+  {
+    id: 23,
+    src: "/images/gallery/event6.jpg",
+    title:"Back To the 90s",
+    category: "Events",
+  },
+
+   {
+    id: 24,
+    src: "/images/gallery/event7.jpg",
+    title: "Back To the 90s",
+    category: "Events",
+  },
+  {
+    id: 25,
+    src: "/images/gallery/event8.jpg",
+    title:"Back To the 90s",
+    category: "Events",
+  },
+
+
+
+{
+    id: 26,
+    src: "/images/gallery/class11.jpg",
+    title: "Life at Palace Royal",
+    category: "Classrooms",
+  },
+
+    {
+    id: 27,
+    src: "/images/gallery/event9.jpg",
+    title:"Career Day",
+    category: "Events",
+  },
+
+   {
+    id: 28,
+    src: "/images/gallery/event10.jpg",
+    title:"Career Day",
+    category: "Events",
+  },
+
+{
+  id: 29,
+  src: "/images/gallery/event11.jpg",
+  title: "School Event",
+  category: "Events",
+},
+{
+  id: 30,
+  src: "/images/gallery/event12.jpg",
+  title: "School Event",
+  category: "Events",
+},
+{
+  id: 31,
+  src: "/images/gallery/event13.jpg",
+  title: "School Event",
+  category: "Events",
+},
+{
+  id: 32,
+  src: "/images/gallery/event14.jpg",
+  title: "School Event",
+  category: "Events",
+},
+{
+  id: 33,
+  src: "/images/gallery/event15.jpg",
+  title: "School Event",
+  category: "Events",
+},
+{
+  id: 34,
+  src: "/images/gallery/event16.jpg",
+  title: "School Event",
+  category: "Events",
+},
+{
+  id: 35,
+  src: "/images/gallery/event17.jpg",
+  title: "School Event",
+  category: "Events",
+},
+{
+  id: 36,
+  src: "/images/gallery/event18.jpg",
+  title: "School Event",
+  category: "Events",
+},
+
+
+{
+  id: 38,
+  src: "/images/gallery/event20.jpg",
+  title: "School Event",
+  category: "Events",
+},
+{
+  id: 39,
+  src: "/images/gallery/event28.jpg",
+  title: "School Event",
+  category: "Events",
+},
+{
+  id: 40,
+  src: "/images/gallery/event21.jpg",
+  title: "School Event",
+  category: "Events",
+},
+{
+  id: 41,
+  src: "/images/gallery/event22.jpg",
+  title: "School Event",
+  category: "Events",
+},
+
+{
+  id: 42,
+  src: "/images/gallery/event23.jpg",
+  title: "School Event",
+  category: "Events",
+},
+{
+  id: 43,
+  src: "/images/gallery/event24.jpg",
+  title: "School Event",
+  category: "Events",
+},
+{
+  id: 44,
+  src: "/images/gallery/event25.jpg",
+  title: "School Event",
+  category: "Events",
+},
+{
+  id: 45,
+  src: "/images/gallery/event26.jpg",
+  title: "School Event",
+  category: "Events",
+},
+{
+  id: 46,
+  src: "/images/gallery/event27.jpg",
+  title: "School Event",
+  category: "Events",
+},
+{
+  id: 47,
+  src: "/images/gallery/event28.jpg",
+  title: "School Event",
+  category: "Events",
+},
+{
+  id: 48,
+  src: "/images/gallery/event29.jpg",
+  title: "School Event",
+  category: "Events",
+},
+{
+  id: 49,
+  src: "/images/gallery/event30.jpg",
+  title: "Royal Week",
+  category: "Events",
+},
+{
+  id: 50,
+  src: "/images/gallery/event31.jpg",
+  title: "Royal Week",
+  category: "Events",
+},
+
+
+
+
+{
+  id: 51,
+  src: "/images/gallery/event36.jpg",
+  title: "Royal Week",
+  category: "Events",
+},
+
+{
+  id: 52,
+  src: "/images/gallery/event33.jpg",
+  title: "Royal Week",
+  category: "Events",
+},
+
+
+
+
+{
+  id: 54,
+  src: "/images/gallery/event35.jpg",
+  title: "Royal Week",
+  category: "Events",
+},
+
+
+ {
+    id: 55,
+    src: "/images/gallery/graduation6.jpg",
+    title: "Graduation & Awards Day",
+    category: "Graduation",
+  },
+
+
+
+
+
+
+
+{
+    id: 58,
+    src: "/images/gallery/graduation9.jpg",
+    title: "Graduation & Awards Day",
+    category: "Graduation",
+  },
+
+
+{
+    id: 59,
+    src: "/images/gallery/graduation10.jpg",
+    title: "Graduation & Awards Day",
+    category: "Graduation",
+  },
+
+{
+    id: 60,
+    src: "/images/gallery/graduation11.jpg",
+    title: "Graduation & Awards Day",
+    category: "Graduation",
+  },
+
+{
+    id: 61,
+    src: "/images/gallery/graduation13.jpg",
+    title: "Graduation & Awards Day",
+    category: "Graduation",
+  },
+
+{
+    id: 62,
+    src: "/images/gallery/graduation17.jpg",
+    title: "Graduation & Awards Day",
+    category: "Graduation",
+  },
+
+  {
+    id: 63,
+    src: "/images/gallery/graduation15.jpg",
+    title: "Graduation & Awards Day",
+    category: "Graduation",
+  },
+
+{
+  id: 64,
+  src: "/images/gallery/ft1.jpg",
+  title: "Field Trip to Accra International Airport",
+  category: "Field Trips",
+},
+{
+  id: 65,
+  src: "/images/gallery/ft2.jpg",
+  title: "Field Trip to Accra International Airport",
+  category: "Field Trips",
+},
+{
+  id: 66,
+  src: "/images/gallery/ft3.jpg",
+  title: "Field Trip to Accra International Airport",
+  category: "Field Trips",
+},
+{
+  id: 67,
+  src: "/images/gallery/ft11.jpg",
+  title: "Field Trip to Accra International Airport",
+  category: "Field Trips",
+},
+
+{
+  id: 68,
+  src: "/images/gallery/ft5.jpg",
+  title: "Field Trip to Accra International Airport",
+  category: "Field Trips",
+},
+{
+  id: 69,
+  src: "/images/gallery/ft6.jpg",
+  title: "Field Trip to Accra International Airport",
+  category: "Field Trips",
+},
+{
+  id: 70,
+  src: "/images/gallery/ft7.jpg",
+  title: "Field Trip to Accra International Airport",
+  category: "Field Trips",
+},
+{
+  id: 71,
+  src: "/images/gallery/ft8.jpg",
+  title: "Field Trip to Accra International Airport",
+  category: "Field Trips",
+},
+{
+  id: 72,
+  src: "/images/gallery/ft9.jpg",
+  title: "Field Trip to Accra International Airport",
+  category: "Field Trips",
+},
+{
+  id: 73,
+  src: "/images/gallery/ft10.jpg",
+  title: "Field Trip to Accra International Airport",
+  category: "Field Trips",
+},
+
+{
+  id: 74,
+  src: "/images/gallery/os1.jpg",
+  title: "Osu Castle",
+  category: "Field Trips",
+},
+
+{
+  id: 75,
+  src: "/images/gallery/os2.jpg",
+  title: "Osu Castle",
+  category: "Field Trips",
+},
+
+{
+  id: 76,
+  src: "/images/gallery/os3.jpg",
+  title: "Ussher Fort",
+  category: "Field Trips",
+},
+
+{
+  id: 77,
+  src: "/images/gallery/os4.jpg",
+  title: "Ussher Fort",
+  category: "Field Trips",
+},
+
+{
+  id: 78,
+  src: "/images/gallery/os5.jpg",
+  title: "Ussher Fort",
+  category: "Field Trips",
+},
+
+{
+  id: 79,
+  src: "/images/gallery/os6.jpg",
+  title: "Ussher Fort",
+  category: "Field Trips",
+},
+
+
+{
+  id: 80,
+  src: "/images/gallery/osu1.jpg",
+  title: "Ussher Fort",
+  category: "Field Trips",
+},
+
+
+{
+  id: 81,
+  src: "/images/gallery/osu2.jpg",
+  title: "Ussher Fort",
+  category: "Field Trips",
+},
+
+
 ];
 
 const categories = [
   "All",
-  "School Life",
-  "Academics",
+  "Classrooms",
   "Events",
-  "Sports",
   "Graduation",
-  "Educational Visits",
+  "Field Trips",
 ];
 
 export default function GalleryPage() {
@@ -315,8 +777,7 @@ export default function GalleryPage() {
             className="absolute right-5 top-5 z-20 text-3xl font-light text-white transition hover:text-[#D4AF37]"
             aria-label="Close gallery"
           >
-            ×
-          </button>
+                </button>
 
 
           {/* Previous */}

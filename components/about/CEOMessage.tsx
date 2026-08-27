@@ -16,7 +16,7 @@ export default function CEOMessage() {
 
             <div className="relative aspect-[4/5] overflow-hidden rounded-[36px] bg-[#F4F1EE]">
               <Image
-                src="/images/ceo.jpg"
+                src="/images/news/BMA.jpg"
                 alt="Chief Executive Officer of Palace Royal International School"
                 fill
                 className="object-cover"

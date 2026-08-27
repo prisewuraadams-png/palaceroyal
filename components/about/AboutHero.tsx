@@ -4,7 +4,7 @@ export default function AboutHero() {
   return (
     <section className="relative h-screen overflow-hidden">
       <Image
-        src="/images/hero.jpg"
+        src="/images/news/hero.jpg"
         alt="Palace Royal International School"
         fill
         priority

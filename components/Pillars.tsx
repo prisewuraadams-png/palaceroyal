@@ -16,25 +16,130 @@ const pillars = [
     title: "Honour",
     text: "Christian values",
   },
-  
 ];
 
 export default function Pillars() {
   return (
-    <section className="relative -mt-28 z-20">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="flex flex-col md:flex-row md:justify-between rounded-[32px] border border-[#D4AF37]/20 bg-black/45 px-8 py-10 backdrop-blur-lg">
-          {pillars.map((item) => (
-            <div key={item.title} className="text-center text-white">
-              <item.icon className="mx-auto mb-4 text-[#D4AF37]" size={32} />
+    <section
+      className="
+        relative
+        z-20
+        -mt-14
 
-              <h3 className="mb-2 font-bold uppercase tracking-widest">
-                {item.title}
-              </h3>
+        sm:-mt-16
 
-              <p className="text-sm text-white/70">{item.text}</p>
-            </div>
-          ))}
+        lg:-mt-24
+      "
+    >
+      <div
+        className="
+          mx-auto
+          w-full
+          max-w-7xl
+          px-4
+
+          sm:px-6
+
+          lg:px-12
+        "
+      >
+        <div
+          className="
+            grid
+            grid-cols-1
+            overflow-hidden
+            rounded-[24px]
+            border
+            border-[#D4AF37]/25
+            bg-[#1F1217]/80
+            shadow-2xl
+            backdrop-blur-xl
+
+            sm:grid-cols-3
+            sm:rounded-[28px]
+
+            lg:rounded-[32px]
+          "
+        >
+          {pillars.map((item, index) => {
+            const Icon = item.icon;
+
+            return (
+              <div
+                key={item.title}
+                className={`
+                  flex
+                  flex-col
+                  items-center
+                  justify-center
+                  px-4
+                  py-6
+                  text-center
+                  text-white
+
+                  sm:min-h-[150px]
+                  sm:px-5
+                  sm:py-6
+
+                  lg:min-h-[170px]
+                  lg:px-8
+                  lg:py-8
+
+                  ${
+                    index !== pillars.length - 1
+                      ? "border-b border-white/10 sm:border-b-0 sm:border-r"
+                      : ""
+                  }
+                `}
+              >
+                {/* Icon */}
+                <Icon
+                  className="
+                    mb-3
+                    text-[#D4AF37]
+
+                    sm:mb-4
+                  "
+                  size={28}
+                  strokeWidth={1.8}
+                />
+
+                {/* Title */}
+                <h3
+                  className="
+                    text-xs
+                    font-bold
+                    uppercase
+                    tracking-[0.2em]
+
+                    sm:text-sm
+                    sm:tracking-[0.18em]
+
+                    lg:text-base
+                    lg:tracking-widest
+                  "
+                >
+                  {item.title}
+                </h3>
+
+                {/* Description */}
+                <p
+                  className="
+                    mt-2
+                    max-w-[220px]
+                    text-xs
+                    leading-5
+                    text-white/70
+
+                    sm:text-sm
+                    sm:leading-6
+                  "
+                >
+                  {item.text}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

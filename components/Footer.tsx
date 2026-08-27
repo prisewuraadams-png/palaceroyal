@@ -8,80 +8,202 @@ import {
 } from "react-icons/fa";
 
 export default function Footer() {
+  const socialLinks = [
+    {
+      icon: FaFacebookF,
+      href: "https://www.facebook.com/people/Palace-Royal-International-School/61575249410649/?mibextid=wwXIfr&rdid=4OKEriZJLm51hfev&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GBpR2aUCd%2F%3Fmibextid%3DwwXIfr",
+      label: "Facebook",
+    },
+    {
+      icon: FaInstagram,
+      href: "https://www.instagram.com/palaceroyalint_school?igsh=MXExd211Zmw5NnFlZA%3D%3D&utm_source=qr",
+      label: "Instagram",
+    },
+    {
+      icon: FaLinkedinIn,
+      href: "https://www.linkedin.com/in/palace-royal-international-school-b85800404/",
+      label: "LinkedIn",
+    },
+    {
+      icon: FaTiktok,
+      href: "https://www.tiktok.com/@palaceroyalintsch?_r=1&_t=ZS-95hRK3zbMGK",
+      label: "TikTok",
+    },
+  ];
+
   return (
     <footer className="bg-[#5A001A] text-white">
-      {/* Gold accent line */}
+
+      {/* Gold Accent */}
       <div className="h-[2px] bg-[#D4AF37]" />
 
-      <div className="mx-auto max-w-6xl px-6 py-12 lg:px-8">
+      <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8 lg:px-12 lg:py-14">
 
-        {/* Main Footer */}
-        <div className="flex flex-col items-center gap-12 md:flex-row md:items-start md:justify-center md:gap-24">
+        {/* =====================================================
+            MAIN FOOTER
+        ====================================================== */}
+        <div
+          className="
+            grid
+            grid-cols-1
+            gap-10
 
-          {/* Explore */}
-          <div className="w-full max-w-[190px]">
-            <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-[#D4AF37]">
+            sm:grid-cols-2
+            sm:gap-12
+
+            lg:grid-cols-3
+            lg:gap-16
+          "
+        >
+
+          {/* ===================================================
+              EXPLORE
+          ==================================================== */}
+          <div>
+            <h3
+              className="
+                text-[10px]
+                font-bold
+                uppercase
+                tracking-[0.3em]
+                text-[#D4AF37]
+
+                sm:text-xs
+              "
+            >
               Explore
             </h3>
 
             <div className="mt-5 flex flex-col gap-3 text-sm">
-              <Link href="/about" className="transition hover:text-[#D4AF37]">
+              <Link
+                href="/about"
+                className="transition-colors hover:text-[#D4AF37]"
+              >
                 About our school
               </Link>
-              <Link href="/academics" className="transition hover:text-[#D4AF37]">
+
+              <Link
+                href="/academics"
+                className="transition-colors hover:text-[#D4AF37]"
+              >
                 Academics
               </Link>
-              <Link href="/admissions" className="transition hover:text-[#D4AF37]">
+
+              <Link
+                href="/admissions"
+                className="transition-colors hover:text-[#D4AF37]"
+              >
                 Admissions
               </Link>
-              <Link href="/news" className="transition hover:text-[#D4AF37]">
+
+              <Link
+                href="/news"
+                className="transition-colors hover:text-[#D4AF37]"
+              >
                 News & Events
               </Link>
-              <Link href="/gallery" className="transition hover:text-[#D4AF37]">
+
+              <Link
+                href="/gallery"
+                className="transition-colors hover:text-[#D4AF37]"
+              >
                 Gallery
               </Link>
             </div>
           </div>
 
-          {/* Contact */}
-          <div className="w-full max-w-[260px]">
-            <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-[#D4AF37]">
+          {/* ===================================================
+              CONTACT
+          ==================================================== */}
+          <div>
+            <h3
+              className="
+                text-[10px]
+                font-bold
+                uppercase
+                tracking-[0.3em]
+                text-[#D4AF37]
+
+                sm:text-xs
+              "
+            >
               Contact
             </h3>
 
             <div className="mt-5 space-y-5 text-sm">
 
+              {/* Phone */}
               <div className="flex items-start gap-3">
-                <Phone size={16} className="mt-0.5 flex-shrink-0 text-[#D4AF37]" />
-                <span>+233 56 566 9352</span>
+                <Phone
+                  size={16}
+                  className="mt-0.5 shrink-0 text-[#D4AF37]"
+                />
+
+                <a
+                  href="tel:+233565669352"
+                  className="break-words transition-colors hover:text-[#D4AF37]"
+                >
+                  +233 56 566 9352
+                </a>
               </div>
 
+              {/* Email */}
               <div className="flex items-start gap-3">
-                <Mail size={16} className="mt-0.5 flex-shrink-0 text-[#D4AF37]" />
-                <span className="break-words">
+                <Mail
+                  size={16}
+                  className="mt-0.5 shrink-0 text-[#D4AF37]"
+                />
+
+                <a
+                  href="mailto:palaceroyalinternationalschool@gmail.com"
+                  className="break-all transition-colors hover:text-[#D4AF37]"
+                >
                   palaceroyalinternationalschool@gmail.com
-                </span>
+                </a>
               </div>
 
+              {/* Address */}
               <div className="flex items-start gap-3">
-                <MapPin size={16} className="mt-0.5 flex-shrink-0 text-[#D4AF37]" />
-                <span>Ecowas Road, Madina, Accra, Ghana</span>
+                <MapPin
+                  size={16}
+                  className="mt-0.5 shrink-0 text-[#D4AF37]"
+                />
+
+                <span className="leading-6">
+                  Ecowas Road, Madina,
+                  <br className="sm:hidden" />
+                  {" "}Accra, Ghana
+                </span>
               </div>
 
             </div>
           </div>
 
-          {/* Portals */}
-          <div className="w-full max-w-[180px]">
-            <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-[#D4AF37]">
+          {/* ===================================================
+              PORTALS
+          ==================================================== */}
+          <div>
+            <h3
+              className="
+                text-[10px]
+                font-bold
+                uppercase
+                tracking-[0.3em]
+                text-[#D4AF37]
+
+                sm:text-xs
+              "
+            >
               Portals
             </h3>
 
             <div className="mt-5 flex flex-col gap-3 text-sm">
+
               <Link
                 href="PASTE_PARENT_STUDENT_PORTAL_LINK"
                 target="_blank"
-                className="transition hover:text-[#D4AF37]"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-[#D4AF37]"
               >
                 Student & Parent
               </Link>
@@ -89,7 +211,8 @@ export default function Footer() {
               <Link
                 href="PASTE_STAFF_PORTAL_LINK"
                 target="_blank"
-                className="transition hover:text-[#D4AF37]"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-[#D4AF37]"
               >
                 Staff
               </Link>
@@ -97,60 +220,97 @@ export default function Footer() {
               <Link
                 href="PASTE_ADMIN_PORTAL_LINK"
                 target="_blank"
-                className="transition hover:text-[#D4AF37]"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-[#D4AF37]"
               >
                 Administration
               </Link>
+
             </div>
           </div>
 
         </div>
 
-        {/* Bottom Bar */}
-        <div className="mt-12 border-t border-white/10 pt-6">
-          <div className="flex flex-col items-center justify-between gap-5 md:flex-row">
+        {/* =====================================================
+            BOTTOM BAR
+        ====================================================== */}
+        <div className="mt-10 border-t border-white/10 pt-6 sm:mt-12">
 
-            <p className="text-xs text-white/60 text-center md:text-left">
+          <div
+            className="
+              flex
+              flex-col
+              items-center
+              gap-6
+
+              lg:flex-row
+              lg:items-center
+              lg:justify-between
+            "
+          >
+
+            {/* Copyright */}
+            <p
+              className="
+                text-center
+                text-[11px]
+                leading-5
+                text-white/60
+
+                lg:text-left
+              "
+            >
               © {new Date().getFullYear()} Palace Royal International School.
-              All rights reserved.
+              <br className="sm:hidden" /> All rights reserved.
             </p>
 
-            <div className="flex gap-3">
-              {[
-                {
-                  icon: FaFacebookF,
-                  href: "https://www.facebook.com/people/Palace-Royal-International-School/61575249410649/?mibextid=wwXIfr&rdid=4OKEriZJLm51hfev&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GBpR2aUCd%2F%3Fmibextid%3DwwXIfr",
-                },
-                {
-                  icon: FaInstagram,
-                  href: "https://www.instagram.com/palaceroyalint_school?igsh=MXExd211Zmw5NnFlZA%3D%3D&utm_source=qr",
-                },
-                {
-                  icon: FaLinkedinIn,
-                  href: "https://www.linkedin.com/in/palace-royal-international-school-b85800404/",
-                },
-                {
-                  icon: FaTiktok,
-                  href: "https://www.tiktok.com/@palaceroyalintsch?_r=1&_t=ZS-95hRK3zbMGK",
-                },
-              ].map(({ icon: Icon, href }, index) => (
+            {/* Social Links */}
+            <div className="flex items-center gap-3">
+              {socialLinks.map(({ icon: Icon, href, label }) => (
                 <Link
-                  key={index}
+                  key={label}
                   href={href}
                   target="_blank"
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/15 transition hover:border-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#5A001A]"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="
+                    flex
+                    h-9
+                    w-9
+                    items-center
+                    justify-center
+                    rounded-full
+                    border
+                    border-white/15
+                    transition-all
+                    duration-300
+
+                    hover:border-[#D4AF37]
+                    hover:bg-[#D4AF37]
+                    hover:text-[#5A001A]
+
+                    sm:h-10
+                    sm:w-10
+                  "
                 >
                   <Icon size={14} />
                 </Link>
               ))}
             </div>
 
-            <div className="flex gap-5 text-xs text-white/60">
-              <Link href="/privacy" className="transition hover:text-[#D4AF37]">
+            {/* Legal Links */}
+            <div className="flex items-center gap-5 text-[11px] text-white/60 sm:text-xs">
+              <Link
+                href="/privacy"
+                className="transition-colors hover:text-[#D4AF37]"
+              >
                 Privacy
               </Link>
 
-              <Link href="/accessibility" className="transition hover:text-[#D4AF37]">
+              <Link
+                href="/accessibility"
+                className="transition-colors hover:text-[#D4AF37]"
+              >
                 Accessibility
               </Link>
             </div>

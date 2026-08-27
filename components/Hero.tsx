@@ -4,30 +4,43 @@ import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen overflow-hidden">
-
-     <Image
-  src="/images/hero.jpg"
-  alt="Palace Royal International School"
-  fill
-  priority
-  className="object-contain object-center"
-/>
+    <section className="relative min-h-[100svh] overflow-hidden">
+      {/* Background Image */}
+      <Image
+        src="/images/news/hero.jpg"
+        alt="Palace Royal International School"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-center"
+      />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#2D0612]/30 via-[#3A0817]/55 to-[#2D0612]/85" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#2D0612]/30 via-[#3A0817]/55 to-[#2D0612]/90" />
 
       {/* Content */}
-      <div className="relative z-10 flex h-full items-center">
+      <div className="relative z-10 flex min-h-[100svh] items-center">
+        <div className="mx-auto w-full max-w-7xl px-5 pt-24 pb-24 sm:px-8 sm:pt-28 lg:px-12 lg:pt-20">
 
-        <div className="mx-auto w-full max-w-7xl px-6 lg:px-12">
-
-          <p className="mb-4 text-sm font-bold uppercase tracking-[0.35em] text-[#D4AF37]">
+          {/* Eyebrow */}
+          <p className="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-[#D4AF37] sm:text-sm sm:tracking-[0.35em]">
             Oxford International Curriculum
           </p>
 
-          <h1 className="max-w-5xl text-6xl font-black leading-[0.9] tracking-tight text-white md:text-7xl lg:text-8xl">
-
+          {/* Heading */}
+          <h1
+            className="
+              max-w-5xl
+              text-5xl
+              font-black
+              leading-[0.92]
+              tracking-tight
+              text-white
+              sm:text-6xl
+              md:text-7xl
+              lg:text-8xl
+            "
+          >
             Locally
             <br />
             Grounded.
@@ -35,47 +48,101 @@ export default function Hero() {
             Globally
             <br />
             Minded.
-
           </h1>
 
-          <p className="mt-8 max-w-2xl text-lg leading-8 text-white/85">
-
+          {/* Description */}
+          <p
+            className="
+              mt-6
+              max-w-xl
+              text-base
+              leading-7
+              text-white/85
+              sm:mt-8
+              sm:text-lg
+              sm:leading-8
+            "
+          >
             Raising future leaders through academic excellence,
             Christian values and an internationally recognised
             Oxford education.
-
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          {/* Buttons */}
+          <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-4">
 
             <Link
               href="/admissions"
-              className="rounded-full bg-[#D4AF37] px-8 py-4 font-semibold text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(212,175,55,.45)]"
+              className="
+                inline-flex
+                w-full
+                items-center
+                justify-center
+                rounded-full
+                bg-[#D4AF37]
+                px-8
+                py-3.5
+                font-semibold
+                text-black
+                transition-all
+                duration-300
+                hover:scale-105
+                hover:shadow-[0_0_30px_rgba(212,175,55,.45)]
+                active:scale-95
+                sm:w-auto
+                sm:py-4
+              "
             >
               Apply Now
             </Link>
 
             <Link
               href="/contact"
-              className="rounded-full border border-white px-8 py-4 font-semibold text-white transition-all duration-300 hover:bg-white hover:text-[#6D0F2C]"
+              className="
+                inline-flex
+                w-full
+                items-center
+                justify-center
+                rounded-full
+                border
+                border-white
+                px-8
+                py-3.5
+                font-semibold
+                text-white
+                transition-all
+                duration-300
+                hover:bg-white
+                hover:text-[#6D0F2C]
+                active:scale-95
+                sm:w-auto
+                sm:py-4
+              "
             >
               Book a Tour
             </Link>
 
           </div>
-
         </div>
-
       </div>
 
-      {/* Scroll indicator */}
-
-      <div className="absolute bottom-12 left-1/2 z-10 -translate-x-1/2">
-
-        <ArrowDown className="animate-bounce text-[#D4AF37]" size={30} />
-
+      {/* Scroll Indicator */}
+      <div
+        className="
+          absolute
+          bottom-6
+          left-1/2
+          z-10
+          -translate-x-1/2
+          sm:bottom-8
+          lg:bottom-12
+        "
+      >
+        <ArrowDown
+          className="animate-bounce text-[#D4AF37]"
+          size={26}
+        />
       </div>
-
     </section>
   );
 }
