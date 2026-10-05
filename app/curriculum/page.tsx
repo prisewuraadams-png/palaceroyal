@@ -3,7 +3,7 @@ import CurriculumStructure from "@/components/CurriculumStructure";
 import Image from "next/image";
 import CurriculumComparison from "@/components/CurriculumComparison";
 import AssessmentSection from "@/components/AssessmentSection";
-import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export default function CurriculumPage() {
   return (
@@ -15,11 +15,11 @@ export default function CurriculumPage() {
         {/* HERO */}
         <section className="relative h-[90vh] overflow-hidden">
           <Image
-            src="/images/hero.jpg"
+            src="/images/news/herotsx.jpg"
             alt="Palace Royal Campus"
             fill
             priority
-            className="object-cover"
+            className="object-center"
           />
 
           <div className="absolute inset-0 bg-[#6D0F2C]/70" />
@@ -65,7 +65,7 @@ export default function CurriculumPage() {
 
           </div>
         </section>
-< CurriculumStructure />
+<CurriculumStructure />
        <CurriculumComparison />
        <AssessmentSection />
 
@@ -88,14 +88,21 @@ export default function CurriculumPage() {
             </p>
 
             <div className="mt-12 flex flex-wrap justify-center gap-5">
+<div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+  <Link
+    href="/admissions"
+    className="rounded-full border-2 border-white bg-[#D4AF37] px-8 py-4 font-semibold text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(212,175,55,0.45)]"
+  >
+    Apply Now
+  </Link>
 
-              <button className="rounded-full bg-[#D4AF37] px-8 py-4 font-semibold text-black transition hover:scale-105">
-                Apply Now
-              </button>
-
-              <button className="rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-[#6D0F2C]">
-                Book a Tour
-              </button>
+  <Link
+    href="/contact"
+    className="rounded-full border-2 border-white bg-transparent px-8 py-4 font-semibold text-white transition-all duration-300 hover:bg-white hover:text-[#6D0F2C]"
+  >
+    Book a Tour
+  </Link>
+</div>
 
             </div>
 
@@ -104,7 +111,7 @@ export default function CurriculumPage() {
 
       </main>
 
-      <Footer />
+     
     </>
   );
 }

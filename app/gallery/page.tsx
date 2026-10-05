@@ -37,12 +37,6 @@ const galleryItems: GalleryItem[] = [
     category: "Graduation",
   },
 
-    {
-    id: 5,
-    src: "/images/gallery/graduation5.jpg",
-    title: "Graduation & Awards Day",
-    category: "Graduation",
-  },
 
 
 
@@ -75,12 +69,7 @@ const galleryItems: GalleryItem[] = [
     category: "Classrooms",
   },
 
-{
-    id: 10,
-    src: "/images/gallery/class5.jpg",
-    title: "Life at Palace Royal",
-    category: "Classrooms",
-  },
+
 
   {
     id: 11,
@@ -156,14 +145,7 @@ const galleryItems: GalleryItem[] = [
   },
 
 
-  {
-    id: 21,
-    src: "/images/gallery/school3.jpg",
-    title: "Our School Community",
-    category: "School Life",
-  },
-
-   {
+     {
     id: 22,
     src: "/images/gallery/event5.jpg",
     title: "Back To the 90s",
@@ -445,13 +427,6 @@ const galleryItems: GalleryItem[] = [
   category: "Field Trips",
 },
 {
-  id: 67,
-  src: "/images/gallery/ft11.jpg",
-  title: "Field Trip to Accra International Airport",
-  category: "Field Trips",
-},
-
-{
   id: 68,
   src: "/images/gallery/ft5.jpg",
   title: "Field Trip to Accra International Airport",
@@ -554,6 +529,8 @@ const categories = [
   "Classrooms",
   "Events",
   "Graduation",
+  "Educational Visits",
+  "School Life",
   "Field Trips",
 ];
 
@@ -562,12 +539,27 @@ export default function GalleryPage() {
   const [selectedImage, setSelectedImage] =
     useState<GalleryItem | null>(null);
 
+  // Hide gallery cards whose image file is missing or fails to load.
+  const [brokenImages, setBrokenImages] = useState<number[]>([]);
+
+  const handleImageError = (id: number) => {
+    setBrokenImages((prev) =>
+      prev.includes(id) ? prev : [...prev, id]
+    );
+
+    // Close the lightbox if its image fails.
+    setSelectedImage((current) =>
+      current?.id === id ? null : current
+    );
+  };
+
   const filteredImages =
-    activeCategory === "All"
+    (activeCategory === "All"
       ? galleryItems
       : galleryItems.filter(
           (item) => item.category === activeCategory
-        );
+        )
+    ).filter((item) => !brokenImages.includes(item.id));
 
   const currentIndex = selectedImage
     ? filteredImages.findIndex(
@@ -684,6 +676,7 @@ export default function GalleryPage() {
                     alt={item.title}
                     width={900}
                     height={1200}
+                    onError={() => handleImageError(item.id)}
                     className="h-auto w-full object-cover transition duration-500 group-hover:scale-[1.03]"
                   />
 
@@ -807,6 +800,7 @@ export default function GalleryPage() {
               alt={selectedImage.title}
               width={1600}
               height={1200}
+              onError={() => handleImageError(selectedImage.id)}
               className="max-h-[75vh] w-auto rounded-xl object-contain"
               priority
             />

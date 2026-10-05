@@ -10,7 +10,6 @@ export interface StaffMember {
  qualifications?: string[];
   experience?: string;
   responsibilities: string[];
-  email: string;
 }
 export const staff: StaffMember[] = [
   {
@@ -57,12 +56,13 @@ She is committed to creating an environment where every child is seen, heard, an
 
 As Head Teacher of Palace Royal International School, Christiana champions a culture of excellence, character development, and holistic learning, ensuring that every child is equipped to thrive both inside and beyond the classroom.`,
 
-  qualifications: [
-    "B.A. Communication Studies",
-    "Professional Training in Education"
-  ],
+ qualifications: [
+  "Diploma in Communication Studies",
+  "Bachelor of Arts in Communication Studies",
+  "Post Graduate Diploma in Education"
+],
 
-  experience: "5+ years",
+  experience: "5 years",
 
   responsibilities: [
     "Academic Leadership",
@@ -108,26 +108,230 @@ With professional training in Montessori Education, Special Education, Cambridge
   email: "teacher2@palaceroyal.edu.gh",
 },
 
+
+ {
+    id: "teacher7",
+    slug: "teacher7",
+    name: "Ms. Henrietta Animley",
+    role: "Year 1 Teacher",
+    category: "teachers",
+    image: "/images/staff/teacher7.jpg",
+  quote: "Every child can flourish when learning is filled with creativity, encouragement, and confidence.",
+    bio: `Henrietta Korleki Animley is a licensed primary educator and a graduate of the University of Cape Coast, dedicated to creating supportive, learner-centered classrooms. Her deep love for reading inspired her to become a teacher, and she is passionate about helping young learners develop strong literacy skills while growing in confidence.
+
+She believes learning should be meaningful and engaging, and incorporates creative, hands-on approaches such as storytelling and simple interactive projects into her classroom. Through these methods, she strives to create an environment where learners feel supported, inspired, and excited to learn.`,
+    
+
+qualifications: [
+  "B.Ed Primary Education – University of Cape Coast"
+],
+experience: "1 year",
+    
+responsibilities: [
+  "Primary Education",
+  "Literacy Development",
+  "Student Mentorship",
+  "Creative & Hands-On Learning"
+],
+
+email: "teacher10@palaceroyal.edu.gh",
+
+  },
+
+
+ {
+    id: "teacher-10",
+    slug: "teacher-10",
+    name: " Mrs. Rosina Ama Frimpomaa Abedi",
+    role: "Year 2 Teacher",
+    category: "teachers",
+    image: "/images/staff/Teacher10.jpg",
+   quote: "Every child has the potential to succeed when guided with patience, knowledge, and care.",
+    bio: `Rosina Ama Frimpomaa Abedi is a dedicated educator with 12 years of experience in the teaching field. She is passionate about continuous learning, personal development, and embracing new challenges in education.
+
+With a Bachelor of Education (B.Ed), Diploma in Basic Education (DBE), National Service Certificate, and Licensial Certificate, she brings valuable experience and a strong commitment to supporting learners' academic and personal growth. Mrs. Abedi is hardworking, adaptable, and committed to continually improving her skills and making a positive impact in the lives of her learners.`,
+
+qualifications: [
+  "Bachelor of Education (B.Ed)",
+  "Diploma in Basic Education (DBE)",
+  "National Service Certificate",
+  "Licensial Certificate"
+],
+
+    experience: "12 years",
+
+  responsibilities: [
+  "Classroom Management",
+  "Student Mentorship",
+  "Learner Assessment",
+  "Academic Development"
+],
+    email: "teacher6@palaceroyal.edu.gh",
+  },
+
+
+
   {
     id: "teacher-3",
     slug: "teacher-3",
     name: "Ms. Abigail Acquah",
-    role: " Year 1 Teacher",
+    role: " Year 3 Teacher",
     category: "teachers",
     image: "/images/staff/teacher3.jpg",
-    quote: "Learning begins with curiosity.",
-    bio: "Teacher biography.",
-    qualifications: ["Qualification"],
-    experience: "5+ years",
-    responsibilities: ["Subject Teaching"],
+    quote: "Nurturing young minds today, building confident and critical thinkers for tomorrow.",
+  bio: `Miss Acquah is a dedicated early childhood educator passionate about helping children develop a growth mindset and become confident, independent critical thinkers. With 8 years of teaching experience, she brings a caring and learner-centered approach to the classroom.
+
+She holds a Diploma in Education and a Level 4 Diploma in Montessori Education, and is currently pursuing further studies in Early Grade Education. Her experience includes classroom management, family engagement, effective teaching techniques, and student assessment. She is committed to creating supportive learning environments where young learners can develop academically, socially, and emotionally.`,
+    qualifications: [
+  "Diploma in Education",
+  "Level 4 Diploma in Montessori Education",
+  "B.Ed Early Grade Education (Currently Pursuing)"
+],
+    experience: "8 years",
+    responsibilities: [
+  "Early Childhood Education",
+  "Classroom Management",
+  "Teaching & Learning",
+  "Student Assessment"
+],
     email: "teacher3@palaceroyal.edu.gh",
   },
 
+
   {
+  id: "teacher-8",
+  slug: "teacher-8",
+  name: "Ms. Benedicta Agyei",
+  role: " Year 4 Teacher",
+  category: "teachers",
+  image: "/images/staff/teacher08.jpg",
+  quote: "Nurturing young minds today for a brighter tomorrow.",
+
+  bio: `Ms. Benedicta Agyei is an experienced, passionate, creative, and versatile educator with 12 years of hands-on experience in Early Years Education. She brings strong expertise in curriculum delivery, child psychology, and holistic child development, creating engaging and nurturing learning experiences that help young learners thrive.
+
+With a Diploma in Early Childhood Education and currently pursuing her final year at the University of Education, Winneba (UEW), she is committed to continuous professional growth and educational excellence. Known for her reliability, creativity, hard work, and child-friendly approach, Ms. Agyei builds positive relationships with learners, parents, and colleagues while fostering a supportive environment where every child can grow with confidence.`,
+
+  qualifications: [
+    "Diploma in Early Childhood Education",
+    "Bachelor's Degree in Early Childhood Education – University of Education, Winneba (In Progress)"
+  ],
+
+  experience: "12 years",
+
+  responsibilities: [
+    "Child Development",
+    "Early Years Education",
+    "Student Mentorship",
+   
+  ],
+
+  email: "teacher8@palaceroyal.edu.gh",
+},
+
+
+  {
+    id: "teacher-5",
+    slug: "teacher-5",
+    name: " Ms.Erica Owusua Boahemaa",
+    role: "Year 5 Teacher",
+    category: "teachers",
+    image: "/images/staff/Teacher11.jpg",
+   quote: "Every child has the potential to shine when given the right guidance, care, and opportunity to grow.",
+    bio: `Erica Owusua Boahemaa is a dedicated educator and professional with over 6 years of experience and a strong background in psychology, entrepreneurship, technology, and education. She holds a B.A. in Psychology and an Executive MBA in Entrepreneurial Management from the University of Ghana, alongside professional certifications in Virtual Assistance from ALX, Software Development from Code Coast, Front-End Development from Google, and a Temporary Education Certificate from the Ghana Education Service.
+
+At Palace Royal International School, she teaches English and Computing, where she is passionate about creating engaging learning experiences and equipping students with both academic knowledge and practical digital skills. Erica is known for her professionalism, creativity, and commitment to student growth and educational excellence.`,
+   
+
+qualifications: [
+  "EMBA in Entrepreneurial Management — University of Ghana",
+  "Bachelor's Degree in Psychology — University of Ghana",
+  "Virtual Assistance Certificate — ALX",
+  "Front-End Development Certificate — Google",
+  "Software Development Certificate — Code Coast",
+  "Temporary Education Certificate — Ghana Education Service"
+],
+
+    experience: "7 years",
+
+  responsibilities: [
+  "Early Years Education",
+  "Child Development & Wellbeing",
+  "Classroom Management",
+  "Creative & Technology-Enhanced Learning"
+],
+    email: "teacher6@palaceroyal.edu.gh",
+  },
+
+{
+  id: "teacher-9",
+  slug: "teacher-9",
+  name: "Mr. Richard Adika",
+  role: "Year 6 Teacher",
+  category: "teachers",
+  image: "/images/staff/teacher9.jpg",
+  quote: "Every lesson is an opportunity to spark curiosity, build confidence, and inspire a lifelong love for learning.",
+
+  bio: `A graduate of the University of Cape Coast with a BSc in Earth Science, Mr. Richard Adika is passionate about transforming the way children experience learning. Inspired by teachers who made challenging subjects engaging and enjoyable, he believes that the right educator can shape not only a child's understanding but also their confidence and attitude toward learning for life.
+
+Committed to creating meaningful and engaging classroom experiences, he strives to make every lesson accessible, inspiring, and memorable. As he continues pursuing a second degree in Education at the University of Education, Winneba, he remains dedicated to equipping young learners with the curiosity, confidence, and critical thinking skills they need to thrive.`,
+
+  qualifications: [
+    "BSc Earth Science – University of Cape Coast",
+    "Special Post Graduate Diploma in Education"
+  ],
+
+  experience: "5 years",
+
+  responsibilities: [
+    "Student Mentorship",
+    "Learner Assessment",
+    "Critical Thinking Development"
+  ],
+
+  email: "teacher9@palaceroyal.edu.gh",
+},
+
+
+  
+
+ {
+  id: "teacher-7",
+  slug: "teacher-7",
+  name: "Ms. Edna Osei",
+  role: "Reception 1 Teacher",
+  category: "teachers",
+  image: "/images/staff/teacher6.jpg",
+  quote: "Every child blossoms when learning is filled with joy, creativity, and care.",
+
+  bio: `Ms. Edna Osei is a passionate Early Childhood Educator dedicated to laying strong foundations for lifelong learning. With a Bachelor's Degree in Early Childhood Education from the University of Cape Coast and professional certifications in Montessori, Jolly Phonics, Jolly Grammar, and Cambridge Education, she creates engaging, learner-centered experiences that help young children develop confidence, literacy, and a love for discovery.
+
+She believes every child flourishes in an environment built on patience, creativity, and purposeful guidance. Through hands-on learning, storytelling, music, arts and crafts, and phonics-rich instruction, Ms. Osei inspires young learners to grow academically, socially, and emotionally, ensuring they are equipped to thrive from their very first steps in education.`,
+
+  qualifications: [
+    "Bachelor's Degree in Early Childhood Education – University of Cape Coast",
+   // "Montessori Certification",
+    //"Jolly Phonics Certification",
+   // "Jolly Grammar Certification",//
+   // "Cambridge Education Certification"
+  ],
+
+  experience: "2 years",
+
+  responsibilities: [
+    "KG1 Instruction",
+    "Early Literacy Development",
+    "Phonics & Numeracy",
+    "Child Development"
+  ],
+
+email: "teacher6@palaceroyal.edu.gh",
+},
+
+{
   id: "teacher-4",
   slug: "teacher-4",
   name: "Mrs. Miriam Addo",
-  role: "Subject Teacher",
+  role: "Reception 2 Teacher",
   category: "teachers",
   image: "/images/staff/teacher4.jpg",
   quote: "Learning begins with curiosity.",
@@ -151,129 +355,40 @@ She believes that every child thrives in an environment where they feel valued, 
   email: "teacher4@palaceroyal.edu.gh",
 },
 
-  
+
+   
   {
-    id: "teacher-5",
-    slug: "teacher-5",
-    name: "Ms. Emmanuella Yeboah",
-    role: "Reception Teacher",
+    id: "teacher-05",
+    slug: "teacher-05",
+    name: " Ms. Edith",
+    role: "Nursery 1 Teacher",
     category: "teachers",
-    image: "/images/staff/Teacher5.jpg",
-    quote: "Learning begins with curiosity.",
-    bio: "Teacher biography.",
-    qualifications: ["Qualification"],
-    experience: "5+ years",
-    responsibilities: ["Subject Teaching"],
+    image: "/images/staff/Teacher10.jpg",
+   quote: "Every child has the potential to succeed when guided with patience, knowledge, and care.",
+    bio: `Rosina Ama Frimpomaa Abedi is a dedicated educator with 12 years of experience in the teaching field. She is passionate about continuous learning, personal development, and embracing new challenges in education.
+
+With a Bachelor of Education (B.Ed), Diploma in Basic Education (DBE), National Service Certificate, and Licensial Certificate, she brings valuable experience and a strong commitment to supporting learners' academic and personal growth. Mrs. Abedi is hardworking, adaptable, and committed to continually improving her skills and making a positive impact in the lives of her learners.`,
+
+qualifications: [
+  "Bachelor of Education (B.Ed)",
+  "Diploma in Basic Education (DBE)",
+  "National Service Certificate",
+  "Licensial Certificate"
+],
+
+    experience: "12 years",
+
+  responsibilities: [
+  "Classroom Management",
+  "Student Mentorship",
+  "Learner Assessment",
+  "Academic Development"
+],
     email: "teacher6@palaceroyal.edu.gh",
   },
 
- {
-  id: "teacher-7",
-  slug: "teacher-7",
-  name: "Ms. Edna Osei",
-  role: "Reception 1 Teacher",
-  category: "teachers",
-  image: "/images/staff/teacher6.jpg",
-  quote: "Every child blossoms when learning is filled with joy, creativity, and care.",
 
-  bio: `Ms. Edna Osei is a passionate Early Childhood Educator dedicated to laying strong foundations for lifelong learning. With a Bachelor's Degree in Early Childhood Education from the University of Cape Coast and professional certifications in Montessori, Jolly Phonics, Jolly Grammar, and Cambridge Education, she creates engaging, learner-centered experiences that help young children develop confidence, literacy, and a love for discovery.
 
-She believes every child flourishes in an environment built on patience, creativity, and purposeful guidance. Through hands-on learning, storytelling, music, arts and crafts, and phonics-rich instruction, Ms. Osei inspires young learners to grow academically, socially, and emotionally, ensuring they are equipped to thrive from their very first steps in education.`,
-
-  qualifications: [
-    "Bachelor's Degree in Early Childhood Education – University of Cape Coast",
-    "Montessori Certification",
-    "Jolly Phonics Certification",
-    "Jolly Grammar Certification",
-    "Cambridge Education Certification"
-  ],
-
-  experience: "5+ years",
-
-  responsibilities: [
-    "KG1 Instruction",
-    "Early Literacy Development",
-    "Phonics & Numeracy",
-    "Child Development",
-    "Parent Engagement"
-  ],
-
-  email: "teacher6@palaceroyal.edu.gh",
-},
-
-{
-  id: "teacher-8",
-  slug: "teacher-8",
-  name: "Mrs. Millicent Baah-Mensah",
-  role: "Teacher",
-  category: "teachers",
-  image: "/images/staff/teacher8.jpg",
-  quote: "Learning begins with curiosity.",
-
-  bio: `A graduate of the University of Cape Coast with a degree in Primary Education, Mrs. Millicent Baah-Mensah is passionate about shaping young lives through purposeful teaching and meaningful learning experiences. She believes that a teacher's words and guidance can leave a lifelong impact, and this conviction inspires her to nurture every child's confidence, curiosity, and character.
-
-Committed to creating engaging and supportive classrooms, she finds joy in seeing learners understand new concepts, grow in their abilities, and develop the foundation they need to thrive both academically and personally.`,
-
-  qualifications: [
-    "Bachelor's Degree in Primary Education – University of Cape Coast"
-  ],
-
-  experience: "5+ years",
-
-  responsibilities: [
-    "Subject Teaching",
-    "Student Mentorship",
-    "Academic Development"
-  ],
-
-  email: "teacher8@palaceroyal.edu.gh",
-},
-
-{
-  id: "teacher-9",
-  slug: "teacher-9",
-  name: "Mr. Richard Adika",
-  role: "Year 5 Teacher",
-  category: "teachers",
-  image: "/images/staff/teacher9.jpg",
-  quote: "Learning begins with curiosity.",
-
-  bio: `A graduate of the University of Cape Coast with a BSc in Earth Science, Mr. Richard Adika is passionate about transforming the way children experience learning. Inspired by teachers who made challenging subjects engaging and enjoyable, he believes that the right educator can shape not only a child's understanding but also their confidence and attitude toward learning for life.
-
-Committed to creating meaningful and engaging classroom experiences, he strives to make every lesson accessible, inspiring, and memorable. As he continues pursuing a second degree in Education at the University of Education, Winneba, he remains dedicated to equipping young learners with the curiosity, confidence, and critical thinking skills they need to thrive.`,
-
-  qualifications: [
-    "BSc Earth Science – University of Cape Coast",
-    "MA Education – University of Education, Winneba (In Progress) "
-  ],
-
-  experience: "5+ years",
-
-  responsibilities: [
-    "Year 5 Instruction",
-    "Science Education",
-    "Student Mentorship",
-    "Academic Development",
-    "Learner Assessment"
-  ],
-
-  email: "teacher9@palaceroyal.edu.gh",
-},
-
-  {
-    id: "teacher7",
-    slug: "teacher7",
-    name: "Ms. Henrietta Animley",
-    role: "Year2 Teacher",
-    category: "teachers",
-    image: "/images/staff/teacher7.jpg",
-    quote: "Learning begins with curiosity.",
-    bio: "Teacher biography.",
-    qualifications: ["Qualification"],
-    experience: "5+ years",
-    responsibilities: ["Subject Teaching"],
-    email: "teacher10@palaceroyal.edu.gh",
-  },
 
   {
     id: "support-1",

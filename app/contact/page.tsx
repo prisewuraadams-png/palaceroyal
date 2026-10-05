@@ -268,7 +268,7 @@ export default function ContactPage() {
                   <p className="mt-1 text-sm font-semibold leading-6 text-[#6D0F2C] sm:text-base">
                     Monday – Friday
                     <br />
-                    7:00 AM – 4:00 PM
+                    6:30 AM – 4:00 PM
                   </p>
                 </div>
               </div>
@@ -543,7 +543,7 @@ export default function ContactPage() {
                 <ArrowRight size={18} />
               </button>
 
-            </form>
+                        </form>
           </div>
 
         </div>
@@ -552,96 +552,36 @@ export default function ContactPage() {
       {/* =====================================================
           FIND US
       ====================================================== */}
-      <section className="bg-white px-5 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-24">
-        <div className="mx-auto max-w-7xl">
 
-          <div className="mb-8 flex flex-col gap-5 sm:mb-10 sm:flex-row sm:items-end sm:justify-between">
+      <section className="bg-[#FAF8F6] py-24">
+  <div className="mx-auto max-w-5xl px-8 text-center">
 
-            <div>
-              <p
-                className="
-                  text-[10px]
-                  font-bold
-                  uppercase
-                  tracking-[0.3em]
-                  text-[#D4AF37]
+    <p className="text-sm font-bold uppercase tracking-[0.35em] text-[#D4AF37]">
+      Find Us
+    </p>
 
-                  sm:text-xs
-                "
-              >
-                Find Us
-              </p>
+    <h2 className="mt-5 text-4xl font-black text-[#6D0F2C] md:text-6xl">
+      Come Visit Palace Royal International School
+    </h2>
 
-              <h2
-                className="
-                  mt-3
-                  text-3xl
-                  font-black
-                  text-[#6D0F2C]
+    <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
+      We would love to welcome you to our school. Visit us at
+      21 Ecowas Road, Madina, Accra.
+    </p>
 
-                  sm:text-4xl
-                "
-              >
-                Come Visit Palace Royal International SChool
-              </h2>
-            </div>
+    <div className="mt-10">
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Palace+Royal+Academy%2C+21+Ecowas+Road%2C+Madina%2C+Accra%2C+Ghana"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-3 rounded-full border-2 border-[#D4AF37] bg-[#6D0F2C] px-8 py-4 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-[#D4AF37] hover:text-[#6D0F2C] hover:shadow-[0_0_30px_rgba(212,175,55,0.35)]"
+      >
+        📍 View Our Location on Google Maps
+      </a>
+    </div>
 
-            <a
-              href={mapLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="
-                inline-flex
-                w-full
-                items-center
-                justify-center
-                gap-2
-                rounded-full
-                border-2
-                border-[#D4AF37]
-                px-6
-                py-3
-                text-sm
-                font-semibold
-                text-[#6D0F2C]
-                transition
-                hover:bg-[#D4AF37]
-                hover:text-white
-
-                sm:w-auto
-              "
-            >
-              Open in Google Maps
-              <ExternalLink size={16} />
-            </a>
-
-          </div>
-
-          {/* Map */}
-          <div
-            className="
-              overflow-hidden
-              rounded-[24px]
-              border
-              border-[#E9E3DB]
-              bg-[#F3F0EC]
-              shadow-sm
-
-              sm:rounded-[30px]
-            "
-          >
-            <iframe
-              title="Palace Royal International School location"
-              src="https://www.google.com/maps?q=Palace+Royal+Academy,+241+Ecowas+Road,+Madina,+Accra,+Ghana&output=embed"
-              className="h-[320px] w-full border-0 sm:h-[400px] lg:h-[480px]"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
-
-        </div>
-      </section>
-
+  </div>
+</section>
       {/* =====================================================
           ADMISSIONS CTA
       ====================================================== */}
@@ -720,7 +660,6 @@ export default function ContactPage() {
 
         </div>
       </section>
-
     </main>
   );
 }
