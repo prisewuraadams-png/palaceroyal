@@ -24,7 +24,7 @@ export const staff: StaffMember[] = [
     qualifications: ["Qualification 1", "Qualification 2"],
     experience: "15+ years",
     responsibilities: ["Academic Leadership", "School Management"],
-    email: "principal@palaceroyal.edu.gh",
+    
   },
 
   {
@@ -39,7 +39,7 @@ export const staff: StaffMember[] = [
     qualifications: ["Qualification 1"],
     experience: "12+ years",
     responsibilities: ["Student Welfare"],
-    email: "viceprincipal@palaceroyal.edu.gh",
+  
   },
 {
   id: "teacher-1",
@@ -72,7 +72,7 @@ As Head Teacher of Palace Royal International School, Christiana champions a cul
     "Parent Engagement"
   ],
 
-  email: "teacher1@palaceroyal.edu.gh",
+
 },
 
 {
@@ -105,7 +105,7 @@ With professional training in Montessori Education, Special Education, Cambridge
     "Child Development & Welfare",
   ],
 
-  email: "teacher2@palaceroyal.edu.gh",
+
 },
 
 
@@ -134,7 +134,6 @@ responsibilities: [
   "Creative & Hands-On Learning"
 ],
 
-email: "teacher10@palaceroyal.edu.gh",
 
   },
 
@@ -166,7 +165,7 @@ qualifications: [
   "Learner Assessment",
   "Academic Development"
 ],
-    email: "teacher6@palaceroyal.edu.gh",
+    
   },
 
 
@@ -194,7 +193,7 @@ She holds a Diploma in Education and a Level 4 Diploma in Montessori Education, 
   "Teaching & Learning",
   "Student Assessment"
 ],
-    email: "teacher3@palaceroyal.edu.gh",
+   
   },
 
 
@@ -225,7 +224,6 @@ With a Diploma in Early Childhood Education and currently pursuing her final yea
    
   ],
 
-  email: "teacher8@palaceroyal.edu.gh",
 },
 
 
@@ -259,7 +257,7 @@ qualifications: [
   "Classroom Management",
   "Creative & Technology-Enhanced Learning"
 ],
-    email: "teacher6@palaceroyal.edu.gh",
+
   },
 
 {
@@ -288,7 +286,7 @@ Committed to creating meaningful and engaging classroom experiences, he strives 
     "Critical Thinking Development"
   ],
 
-  email: "teacher9@palaceroyal.edu.gh",
+
 },
 
 
@@ -324,7 +322,7 @@ She believes every child flourishes in an environment built on patience, creativ
     "Child Development"
   ],
 
-email: "teacher6@palaceroyal.edu.gh",
+
 },
 
 {
@@ -352,7 +350,7 @@ She believes that every child thrives in an environment where they feel valued, 
     "Academic Development"
   ],
 
-  email: "teacher4@palaceroyal.edu.gh",
+ 
 },
 
 
@@ -384,7 +382,7 @@ qualifications: [
   "Learner Assessment",
   "Academic Development"
 ],
-    email: "teacher6@palaceroyal.edu.gh",
+    
   },
 
 
@@ -404,7 +402,7 @@ Working alongside the Creche team, she helps create meaningful daily experiences
 
   
     responsibilities: ["Administration"],
-    email: "support1@palaceroyal.edu.gh",
+   
   },
 {
   id: "support-2",
@@ -419,6 +417,6 @@ Working alongside the Creche team, she helps create meaningful daily experiences
 Working alongside the Creche team, she helps create meaningful daily experiences that encourage comfort, trust, and early exploration, ensuring every child feels secure, valued, and ready to take their first steps in learning.`,
   
   responsibilities: ["School Operations"],
-  email: "support2@palaceroyal.edu.gh",
+
 }
 ];
