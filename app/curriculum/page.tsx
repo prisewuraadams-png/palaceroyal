@@ -19,7 +19,8 @@ export default function CurriculumPage() {
             alt="Palace Royal Campus"
             fill
             priority
-            className="object-center"
+            className="object-cover
+          "
           />
 
           <div className="absolute inset-0 bg-[#6D0F2C]/70" />
