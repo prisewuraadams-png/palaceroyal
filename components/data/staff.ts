@@ -355,39 +355,39 @@ She believes that every child thrives in an environment where they feel valued, 
 
 
    
-  {
-    id: "teacher-05",
-    slug: "teacher-05",
-    name: " Ms. Edith",
-    role: "Nursery 1 Teacher",
-    category: "teachers",
-    image: "/images/staff/Teacher10.jpg",
-   quote: "Every child has the potential to succeed when guided with patience, knowledge, and care.",
-    bio: `Rosina Ama Frimpomaa Abedi is a dedicated educator with 12 years of experience in the teaching field. She is passionate about continuous learning, personal development, and embracing new challenges in education.
+{
+  id: "teacher-05",
+  slug: "teacher-05",
+  name: "Ms. Edith Gordon",
+  role: "Nursery 1 Teacher",
+  category: "teachers",
+  image: "/images/staff/Teacher5.jpg",
 
-With a Bachelor of Education (B.Ed), Diploma in Basic Education (DBE), National Service Certificate, and Licensial Certificate, she brings valuable experience and a strong commitment to supporting learners' academic and personal growth. Mrs. Abedi is hardworking, adaptable, and committed to continually improving her skills and making a positive impact in the lives of her learners.`,
+  quote:
+    "Every child deserves a safe, nurturing environment where they can learn, grow, and thrive.",
 
-qualifications: [
-  "Bachelor of Education (B.Ed)",
-  "Diploma in Basic Education (DBE)",
-  "National Service Certificate",
-  "Licensial Certificate"
-],
+  bio: `Ms. Edith Gordon is a health professional with a strong passion for early childhood education and learner wellbeing. With a BSc in Midwifery, she brings a unique health and wellbeing perspective to the Nursery 1 learning environment.
 
-    experience: "12 years",
+Her professional background strengthens her contribution to the early years by supporting healthy habits, personal hygiene, safety, and the overall wellbeing of young learners. She is passionate about creating a warm, safe, and nurturing environment where children can build confidence, develop positive habits, and grow academically, socially, and physically.
+
+With experience supporting teaching and learning, Ms. Gordon is committed to providing patient and caring support to young learners while continually developing her skills and growing her contribution to the education sector.`,
+
+  qualifications: [
+    "BSc Midwifery — University of Health and Allied Sciences (UHAS)",
+  ],
+
+  experience: "1+ years",
 
   responsibilities: [
-  "Classroom Management",
-  "Student Mentorship",
-  "Learner Assessment",
-  "Academic Development"
-],
-    
-  },
-
-
-
-
+    "Early Years Learning Support",
+    "Child Health & Wellbeing",
+    "Hygiene & Personal Care Education",
+    "Classroom Support",
+    "Child Safety & Wellbeing",
+    "Learner Development Support",
+  ],
+},
+  
   {
     id: "support-1",
     slug: "support-1",
@@ -401,7 +401,7 @@ qualifications: [
 Working alongside the Creche team, she helps create meaningful daily experiences that encourage comfort, trust, and early exploration, ensuring every child feels secure, valued, and ready to take their first steps in learning.`,
 
   
-    responsibilities: ["Administration"],
+    responsibilities: ["Child-Care"    ] 
    
   },
 {
