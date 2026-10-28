@@ -1,4 +1,4 @@
-'use client'
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -13,20 +13,26 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://palaceroyalinternationalschool.org";
+const socialImage = `${siteUrl}/images/news/hero.jpg`;
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://palaceroyalinternationalschool.org"),
+  metadataBase: new URL(siteUrl),
+
   title: "Palace Royal International School",
+
   description:
     "Welcome to Palace Royal International School in Madina, Accra, Ghana. Discover our curriculum, admissions, school community, and educational programmes.",
+
   openGraph: {
     title: "Palace Royal International School",
     description:
       "Discover Palace Royal International School in Madina, Accra, Ghana.",
-    url: "https://palaceroyalinternationalschool.org",
+    url: siteUrl,
     siteName: "Palace Royal International School",
     images: [
       {
-        url: "/images/news/hero.jpg",
+        url: socialImage,
         width: 1200,
         height: 630,
         alt: "Palace Royal International School",
@@ -35,12 +41,13 @@ export const metadata: Metadata = {
     locale: "en_GH",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Palace Royal International School",
     description:
       "Discover Palace Royal International School in Madina, Accra, Ghana.",
-    images: ["/images/news/hero.jpg"],
+    images: [socialImage],
   },
 };
 
@@ -51,7 +58,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         {children}
       </body>
     </html>
