@@ -1,5 +1,7 @@
 
 import type { Metadata } from "next";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -17,6 +19,8 @@ export const metadata: Metadata = {
       "Discover a nurturing learning environment focused on excellence, creativity, and the development of every child.",
     url: "https://palaceroyalinternationalschool.org",
     siteName: "Palace Royal International School",
+    locale: "en_GH",
+    type: "website",
     images: [
       {
         url: "/images/school-og-image.jpg",
@@ -25,8 +29,6 @@ export const metadata: Metadata = {
         alt: "Palace Royal International School",
       },
     ],
-    locale: "en_GH",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
@@ -36,3 +38,19 @@ export const metadata: Metadata = {
     images: ["/images/news/school-logo.jpg"],
   },
 };
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className="min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
