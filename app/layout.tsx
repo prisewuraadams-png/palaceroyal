@@ -1,43 +1,46 @@
-
-import "./globals.css";
+'use client'
 import type { Metadata } from "next";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    "https://palaceroyalinternationalschool.org"
-  ),
-  title: {
-    default: "Palace Royal International School",
-    template: "%s | Palace Royal International School",
-  },
+  metadataBase: new URL("https://palaceroyalinternationalschool.org"),
+  title: "Palace Royal International School",
   description:
-    "Welcome to Palace Royal International School, where children learn, grow, and thrive in a nurturing environment through quality early childhood education.",
+    "Welcome to Palace Royal International School in Madina, Accra, Ghana. Discover our curriculum, admissions, school community, and educational programmes.",
   openGraph: {
     title: "Palace Royal International School",
     description:
-      "Discover a nurturing learning environment focused on excellence, creativity, and the development of every child.",
+      "Discover Palace Royal International School in Madina, Accra, Ghana.",
     url: "https://palaceroyalinternationalschool.org",
     siteName: "Palace Royal International School",
-    locale: "en_GH",
-    type: "website",
     images: [
       {
-        url: "/images/school-og-image.jpg",
+        url: "/images/news/hero.jpg",
         width: 1200,
         height: 630,
         alt: "Palace Royal International School",
       },
     ],
+    locale: "en_GH",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Palace Royal International School",
     description:
-      "Quality early childhood education in a caring and inspiring environment.",
-    images: ["/images/news/school-logo.jpg"],
+      "Discover Palace Royal International School in Madina, Accra, Ghana.",
+    images: ["/images/news/hero.jpg"],
   },
 };
 
@@ -48,10 +51,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {children}
       </body>
     </html>
   );
