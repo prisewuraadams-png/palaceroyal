@@ -15,32 +15,40 @@ const geistMono = Geist_Mono({
 
 const siteUrl = "https://palaceroyalinternationalschool.org";
 const socialImage = `${siteUrl}/images/news/social-share.jpg`;
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: "Palace Royal International School",
 
   description:
-    "Welcome to Palace Royal International School in Madina, Accra, Ghana. Discover our curriculum, admissions, school community, and educational programmes.",
-openGraph: {
-  // Keep your existing title and description
-  images: [
-    {
-      url: socialImage,
-      width: 1200,
-      height: 630,
-      alt: "Palace Royal International School",
-    },
-  ],
-  // Keep your other existing settings
-},
+    "Quality early childhood education in Madina, Accra. Explore our curriculum and admissions.",
 
-twitter: {
-  card: "summary_large_image",
-  // Keep your existing title and description
-  images: [socialImage],
-},
+  openGraph: {
+    title: "Palace Royal International School",
+    description:
+      "Quality early childhood education in Madina, Accra. Explore our curriculum and admissions.",
+    url: siteUrl,
+    siteName: "Palace Royal International School",
+    images: [
+      {
+        url: socialImage,
+        width: 1200,
+        height: 630,
+        alt: "Palace Royal International School",
+      },
+    ],
+    locale: "en_GH",
+    type: "website",
+  },
 
+  twitter: {
+    card: "summary_large_image",
+    title: "Palace Royal International School",
+    description:
+      "Quality early childhood education in Madina, Ritz-Juction on the Ecowas Road. Explore our curriculum and admissions.",
+    images: [socialImage],
+  },
 };
 
 export default function RootLayout({
