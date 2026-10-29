@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 
 const mapLink =
-  "https://www.google.com/maps/search/?api=1&query=Palace+Royal+Academy%2C+241+Ecowas+Road%2C+Madina%2C+Accra%2C+Ghana";
+  "https://www.google.com/maps/dir//Palace+Royal+Academy,+241+Ecowas+Rd,+Madina/@5.6983861,-0.1212416,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0xfdf9db99a8fac7b:0x9b3cb0d155f88d5a!2m2!1d-0.1759589!2d5.6862558?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D";
 
 export default function ContactPage() {
   return (
@@ -569,16 +569,20 @@ export default function ContactPage() {
       21 Ecowas Road, Madina, Accra.
     </p>
 
-    <div className="mt-10">
-      <a
-        href="https://www.google.com/maps/search/?api=1&query=Palace+Royal+Academy%2C+21+Ecowas+Road%2C+Madina%2C+Accra%2C+Ghana"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-3 rounded-full border-2 border-[#D4AF37] bg-[#6D0F2C] px-8 py-4 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-[#D4AF37] hover:text-[#6D0F2C] hover:shadow-[0_0_30px_rgba(212,175,55,0.35)]"
-      >
-        📍 View Our Location on Google Maps
-      </a>
-    </div>
+   
+<div className="mt-10">
+  <a
+    href="https://www.google.com/maps/dir//Palace+Royal+Academy,+241+Ecowas+Rd,+Madina/@5.6983861,-0.1212416,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0xfdf9db99a8fac7b:0x9b3cb0d155f88d5a!2m2!1d-0.1759589!2d5.6862558?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Get directions to Palace Royal Academy, 241 Ecowas Road, Madina, Accra, Ghana"
+    title="Palace Royal Academy on Google Maps"
+    className="inline-flex items-center gap-3 rounded-full border-2 border-[#D4AF37] bg-[#6D0F2C] px-8 py-4 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-[#D4AF37] hover:text-[#6D0F2C] hover:shadow-[0_0_30px_rgba(212,175,55,0.35)]"
+  >
+    📍 View Our Location on Google Maps
+  </a>
+</div>
+
 
   </div>
 </section>

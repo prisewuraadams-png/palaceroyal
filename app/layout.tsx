@@ -18,6 +18,24 @@ const geistMono = Geist_Mono({
 const siteUrl = "https://palaceroyalinternationalschool.org";
 const socialImage = `${siteUrl}/images/news/social-share.jpg`;
 
+const schoolStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "School",
+  name: "Palace Royal International School",
+  alternateName: "Palace Royal Academy",
+  url: siteUrl,
+  description:
+    "Quality early childhood education in Madina, Accra, Ghana. Explore our curriculum and admissions.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "241 Ecowas Road, Madina",
+    addressLocality: "Accra",
+    addressCountry: "GH",
+  },
+  hasMap:
+    "https://www.google.com/maps/dir//Palace+Royal+Academy,+241+Ecowas+Rd,+Madina/@5.6983861,-0.1212416,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0xfdf9db99a8fac7b:0x9b3cb0d155f88d5a!2m2!1d-0.1759589!2d5.6862558?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Palace Royal International School",
@@ -59,6 +77,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schoolStructuredData),
+          }}
+        />
         <Navbar />
         <main>{children}</main>
         <Footer />
