@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 const siteUrl = "https://palaceroyalinternationalschool.org";
-const socialImage = `${siteUrl}/images/news/social-share.jpg`;
+const socialImage = `${siteUrl}/images/og-image.jpg`;
 
 const schoolStructuredData = {
   "@context": "https://schema.org",
