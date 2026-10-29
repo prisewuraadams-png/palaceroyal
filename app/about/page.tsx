@@ -1,22 +1,22 @@
 
-
+import Navbar from "@/components/Navbar";
 import AboutHero from "@/components/about/AboutHero";
 import MissionVision from "@/components/about/MissionVision";
 import CEOMessage from "@/components/about/CEOMessage";
 import StaffProfiles from "@/components/about/StaffProfiles";
-//import OurStory from "@/components/about/OurStory";
-
+// import OurStory from "@/components/about/OurStory";
 
 export default function AboutPage() {
   return (
     <>
-  
-     <main>
-  <AboutHero />
-  <MissionVision />
- {/* <OurStory /> */}
-  <CEOMessage />
-  <StaffProfiles />
+      <Navbar />
+
+      <main>
+        <AboutHero />
+        <MissionVision />
+        {/* <OurStory /> */}
+        <CEOMessage />
+        <StaffProfiles />
 
         {/* Closing CTA */}
         <section className="bg-[#6D0F2C] px-6 py-24 text-center text-white">
@@ -43,8 +43,6 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-
-  
     </>
   );
 }
