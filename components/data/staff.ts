@@ -75,20 +75,57 @@ As Head Teacher of Palace Royal International School, Christiana champions a cul
 
 },
 
+   
+{
+  id: "teacher-05",
+  slug: "teacher-05",
+  name: "Ms. Edith Gordon",
+  role: "Nursery 1 Teacher",
+  category: "teachers",
+  image: "/images/staff/Teacher5.jpg",
+
+  quote:
+    "Every child deserves a safe, nurturing environment where they can learn, grow, and thrive.",
+
+  bio: `Ms. Edith Gordon is a health professional with a strong passion for early childhood education and learner wellbeing. With a BSc in Midwifery, she brings a unique health and wellbeing perspective to the Nursery 1 learning environment.
+
+Her professional background strengthens her contribution to the early years by supporting healthy habits, personal hygiene, safety, and the overall wellbeing of young learners. She is passionate about creating a warm, safe, and nurturing environment where children can build confidence, develop positive habits, and grow academically, socially, and physically.
+
+With experience supporting teaching and learning, Ms. Gordon is committed to providing patient and caring support to young learners while continually developing her skills and growing her contribution to the education sector.`,
+
+  qualifications: [
+    "BSc Midwifery — University of Health and Allied Sciences (UHAS)",
+  ],
+
+  experience: "1+ years",
+
+  responsibilities: [
+    "Early Years Learning Support",
+    "Child Health & Wellbeing",
+    "Hygiene & Personal Care Education",
+    "Classroom Support",
+    "Child Safety & Wellbeing",
+    "Learner Development Support",
+  ],
+},
+  
+
+
 {
   id: "teacher-2",
-  slug: "preschool-head-teacher",
+  slug: "ms-selasie",
   name: "Ms. Esther Tekpor",
-  role: "Preschool Head Teacher",
+  role: "Nursery 2 Teacher",
   category: "teachers",
-  image: "/images/staff/teacher2.jpg",
-  quote: "Every child's first steps in learning should be filled with confidence, curiosity, and care.",
+  image: "/images/staff/Teacher2.jpg",
+  quote:
+    "Every child deserves a nurturing environment where curiosity grows and learning begins with joy.",
 
   bio: `Ms. Esther Tekpor is a dedicated Early Years educator and Preschool Head Teacher with over 15 years of experience nurturing young learners during their most formative years. She is passionate about creating a safe, engaging, and inclusive learning environment where every child develops confidence, curiosity, and a lifelong love for learning.
 
 With professional training in Montessori Education, Special Education, Cambridge Early Years, and First Aid, she brings a well-rounded approach to early childhood development. As she continues pursuing a Bachelor's degree in Early Childhood Education, Ms. Tekpor remains committed to educational excellence, innovative teaching, and partnering with families to help every child thrive.`,
 
-  qualifications: [
+   qualifications: [
     "Diploma in Montessori Education",
     "Diploma in Special Education",
     "Cambridge Early Years Training",
@@ -98,15 +135,77 @@ With professional training in Montessori Education, Special Education, Cambridge
 
   experience: "15+ years",
 
-  responsibilities: [
+responsibilities: [
     "Preschool Leadership",
     "Early Years Curriculum Development",
     "Teacher Mentorship",
     "Child Development & Welfare",
   ],
+},
+
+
+ {
+  id: "teacher-7",
+  slug: "teacher-7",
+  name: "Ms. Edna Osei",
+  role: "Reception 1 Teacher",
+  category: "teachers",
+  image: "/images/staff/teacher6.jpg",
+  quote: "Every child blossoms when learning is filled with joy, creativity, and care.",
+
+  bio: `Ms. Edna Osei is a passionate Early Childhood Educator dedicated to laying strong foundations for lifelong learning. With a Bachelor's Degree in Early Childhood Education from the University of Cape Coast and professional certifications in Montessori, Jolly Phonics, Jolly Grammar, and Cambridge Education, she creates engaging, learner-centered experiences that help young children develop confidence, literacy, and a love for discovery.
+
+She believes every child flourishes in an environment built on patience, creativity, and purposeful guidance. Through hands-on learning, storytelling, music, arts and crafts, and phonics-rich instruction, Ms. Osei inspires young learners to grow academically, socially, and emotionally, ensuring they are equipped to thrive from their very first steps in education.`,
+
+  qualifications: [
+    "Bachelor's Degree in Early Childhood Education – University of Cape Coast",
+   // "Montessori Certification",
+    //"Jolly Phonics Certification",
+   // "Jolly Grammar Certification",//
+   // "Cambridge Education Certification"
+  ],
+
+  experience: "2 years",
+
+  responsibilities: [
+    "KG1 Instruction",
+    "Early Literacy Development",
+    "Phonics & Numeracy",
+    "Child Development"
+  ],
 
 
 },
+
+{
+  id: "teacher-4",
+  slug: "teacher-4",
+  name: "Mrs. Miriam Addo",
+  role: "Reception 2 Teacher",
+  category: "teachers",
+  image: "/images/staff/teacher4.jpg",
+  quote: "Learning begins with curiosity.",
+
+  bio: `Mrs. Miriam Naa Adoley Addo is a passionate educator dedicated to empowering every child to discover their strengths and reach their fullest potential. A proud graduate of the University of Cape Coast, she combines academic excellence with a nurturing, learner-centered approach that inspires confidence, curiosity, and personal growth.
+
+She believes that every child thrives in an environment where they feel valued, supported, and encouraged to explore their unique abilities. At Palace Royal International School, Mrs. Addo is committed to cultivating a culture of excellence, character development, and lifelong learning, equipping learners with the skills and confidence to flourish both inside and beyond the classroom.`,
+
+  qualifications: [
+    "Graduate, University of Cape Coast"
+  ],
+
+  experience: "5+ years",
+
+  responsibilities: [
+    "Subject Teaching",
+    "Student Mentorship",
+    "Academic Development"
+  ],
+
+ 
+},
+
+
 
 
  {
@@ -292,107 +391,11 @@ Committed to creating meaningful and engaging classroom experiences, he strives 
 
   
 
- {
-  id: "teacher-7",
-  slug: "teacher-7",
-  name: "Ms. Edna Osei",
-  role: "Reception 1 Teacher",
-  category: "teachers",
-  image: "/images/staff/teacher6.jpg",
-  quote: "Every child blossoms when learning is filled with joy, creativity, and care.",
-
-  bio: `Ms. Edna Osei is a passionate Early Childhood Educator dedicated to laying strong foundations for lifelong learning. With a Bachelor's Degree in Early Childhood Education from the University of Cape Coast and professional certifications in Montessori, Jolly Phonics, Jolly Grammar, and Cambridge Education, she creates engaging, learner-centered experiences that help young children develop confidence, literacy, and a love for discovery.
-
-She believes every child flourishes in an environment built on patience, creativity, and purposeful guidance. Through hands-on learning, storytelling, music, arts and crafts, and phonics-rich instruction, Ms. Osei inspires young learners to grow academically, socially, and emotionally, ensuring they are equipped to thrive from their very first steps in education.`,
-
-  qualifications: [
-    "Bachelor's Degree in Early Childhood Education – University of Cape Coast",
-   // "Montessori Certification",
-    //"Jolly Phonics Certification",
-   // "Jolly Grammar Certification",//
-   // "Cambridge Education Certification"
-  ],
-
-  experience: "2 years",
-
-  responsibilities: [
-    "KG1 Instruction",
-    "Early Literacy Development",
-    "Phonics & Numeracy",
-    "Child Development"
-  ],
-
-
-},
-
-{
-  id: "teacher-4",
-  slug: "teacher-4",
-  name: "Mrs. Miriam Addo",
-  role: "Reception 2 Teacher",
-  category: "teachers",
-  image: "/images/staff/teacher4.jpg",
-  quote: "Learning begins with curiosity.",
-
-  bio: `Mrs. Miriam Naa Adoley Addo is a passionate educator dedicated to empowering every child to discover their strengths and reach their fullest potential. A proud graduate of the University of Cape Coast, she combines academic excellence with a nurturing, learner-centered approach that inspires confidence, curiosity, and personal growth.
-
-She believes that every child thrives in an environment where they feel valued, supported, and encouraged to explore their unique abilities. At Palace Royal International School, Mrs. Addo is committed to cultivating a culture of excellence, character development, and lifelong learning, equipping learners with the skills and confidence to flourish both inside and beyond the classroom.`,
-
-  qualifications: [
-    "Graduate, University of Cape Coast"
-  ],
-
-  experience: "5+ years",
-
-  responsibilities: [
-    "Subject Teaching",
-    "Student Mentorship",
-    "Academic Development"
-  ],
-
- 
-},
-
-
-   
-{
-  id: "teacher-05",
-  slug: "teacher-05",
-  name: "Ms. Edith Gordon",
-  role: "Nursery 1 Teacher",
-  category: "teachers",
-  image: "/images/staff/Teacher5.jpg",
-
-  quote:
-    "Every child deserves a safe, nurturing environment where they can learn, grow, and thrive.",
-
-  bio: `Ms. Edith Gordon is a health professional with a strong passion for early childhood education and learner wellbeing. With a BSc in Midwifery, she brings a unique health and wellbeing perspective to the Nursery 1 learning environment.
-
-Her professional background strengthens her contribution to the early years by supporting healthy habits, personal hygiene, safety, and the overall wellbeing of young learners. She is passionate about creating a warm, safe, and nurturing environment where children can build confidence, develop positive habits, and grow academically, socially, and physically.
-
-With experience supporting teaching and learning, Ms. Gordon is committed to providing patient and caring support to young learners while continually developing her skills and growing her contribution to the education sector.`,
-
-  qualifications: [
-    "BSc Midwifery — University of Health and Allied Sciences (UHAS)",
-  ],
-
-  experience: "1+ years",
-
-  responsibilities: [
-    "Early Years Learning Support",
-    "Child Health & Wellbeing",
-    "Hygiene & Personal Care Education",
-    "Classroom Support",
-    "Child Safety & Wellbeing",
-    "Learner Development Support",
-  ],
-},
-  
   {
     id: "support-1",
     slug: "support-1",
     name: "Ms. Anita Bondzie",
-    role: "Teacher Assistant",
+    role: "Teaching Assistant",
     category: "support",
     image: "/images/staff/support1.jpg",
     quote: "Supporting excellence every day.",
@@ -401,7 +404,9 @@ With experience supporting teaching and learning, Ms. Gordon is committed to pro
 Working alongside the Creche team, she helps create meaningful daily experiences that encourage comfort, trust, and early exploration, ensuring every child feels secure, valued, and ready to take their first steps in learning.`,
 
   
-    responsibilities: ["Child-Care"    ] 
+    responsibilities: ["Child-Care"  
+
+    ] 
    
   },
 {

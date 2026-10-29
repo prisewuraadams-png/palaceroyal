@@ -19,7 +19,7 @@ const staff = {
 };
 
 const categories = [
-  "Administration",
+ 
   "Teachers",
   "Supporting Staff",
 ] as const;
@@ -28,7 +28,7 @@ export default function StaffProfiles() {
 
 const [activeCategory, setActiveCategory] = useState<
   "Administration" | "Teachers" | "Supporting Staff"
->("Administration");
+>("Teachers");
 
   return (
     <section className="bg-[#FAF8F6] py-24 md:py-32">
