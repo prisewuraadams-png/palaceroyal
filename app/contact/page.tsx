@@ -566,7 +566,7 @@ export default function ContactPage() {
 
     <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
       We would love to welcome you to our school. Visit us at
-      21 Ecowas Road, Madina, Accra.
+      241 Ecowas Road, Madina, Accra.
     </p>
 
    
