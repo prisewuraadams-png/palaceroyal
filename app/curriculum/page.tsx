@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+
 import CurriculumStructure from "@/components/CurriculumStructure";
 import Image from "next/image";
 import CurriculumComparison from "@/components/CurriculumComparison";
@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function CurriculumPage() {
   return (
     <>
-      <Navbar />
+ 
 
       <main className="pt-20">
 

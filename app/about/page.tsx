@@ -1,5 +1,5 @@
 
-import Navbar from "@/components/Navbar";
+
 import AboutHero from "@/components/about/AboutHero";
 import MissionVision from "@/components/about/MissionVision";
 import CEOMessage from "@/components/about/CEOMessage";
@@ -9,7 +9,6 @@ import StaffProfiles from "@/components/about/StaffProfiles";
 export default function AboutPage() {
   return (
     <>
-      <Navbar />
 
       <main>
         <AboutHero />
