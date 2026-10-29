@@ -42,13 +42,14 @@ export const metadata: Metadata = {
     type: "website",
   },
 
-  twitter: {
-    card: "summary_large_image",
-    title: "Palace Royal International School",
-    description:
-      "Quality early childhood education in Madina, Ritz-Juction on the Ecowas Road. Explore our curriculum and admissions.",
-    images: [socialImage],
-  },
+ twitter: {
+  card: "summary_large_image",
+  title: "Palace Royal International School",
+  description:
+    "Quality early childhood education in Madina, Accra. Explore our curriculum and admissions.",
+  images: [socialImage],
+},
+
 };
 
 export default function RootLayout({
